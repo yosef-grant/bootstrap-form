@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./sass/styles.css" />
+    <title>Bootstrap Form</title>
+  </head>
+  <body>
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center flex-column"
+    >
+   
+      <form class="form needs-validation p-4 rounded" novalidate>
+        <div class="intro  text-center">
+        <h1 class="brand p-2">Horizon</h1>
+        <p>Create your free account.</p>
+        
+      </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="validationCustom01">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="First Name"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback pl-1">Enter your first name</div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Surname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputSurname"
+              placeholder="Surname"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback pl-1">Enter your surname</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Email Address"
+            required
+          />
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Must be a valid email address</div>
+        </div>
+        <div class="form-group">
+          <label for="password1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password1"
+            placeholder="Password"
+            required
+            name="pw1"
+          />
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Enter your password</div>
+        </div>
+
+        <button type="submit" class="w-100 submit-btn btn btn-primary mt-1 mb-2">
+          Sign Up!
+        </button>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./validator.js"></script>
+  </body>
+</html>
